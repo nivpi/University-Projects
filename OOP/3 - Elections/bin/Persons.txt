@@ -1,0 +1,36 @@
+Id	Name	Age	City	Years_In_City	Municipality_List	listCandidate
+17	Shirin	53	Afula	6	Agoda	0
+18	Rona	41	Afula	4	Hidahot	0
+19	Malack	25	Afula	12	Yam	0
+20	Faima	77	Dimona	32	Gray	0
+21	Roth	32	Dimona	44	Green	0
+9	Yossi	77	Afula	6	Agoda	1
+10	Fani	55	Afula	4	Hidahot	1
+11	Danny	21	Afula	12	Yam	1
+12	Danna	44	Afula	32	Agoda	1
+13	Ran	69	Afula	44	Hidahot	1
+14	Mohamad	28	Dimona	5	Gray	1
+15	Yossof	45	Dimona	21	Gray	1
+16	Tapalga	33	Dimona	20	Green	1
+30	Yossi	33	Afula			0
+31	Fani	20	Afula			0
+32	Danny	89	Afula			0
+33	Danna	64	Afula			0
+34	Ran	20	Afula			0
+35	Mohamad	55	Dimona			0
+36	Yossof	43	Dimona			0
+37	Tapalga	22	Dimona			0
+38	Yossi	33	Afula			0
+39	Fani	20	Afula			0
+40	Danny	89	Afula			0
+41	Danna	64	Afula			0
+42	Ran	20	Afula			0
+43	Mohamad	55	Dimona			0
+44	Yossof	43	Dimona			0
+45	Tapalga	22	Dimona			0
+46	Zehava	89	Afula			0
+47	Yariv	64	Afula			0
+48	Tal	20	Afula			0
+49	Josh	55	Dimona			0
+50	Assaf	43	Dimona			0
+51	Dar	22	Dimona			0

@@ -1,0 +1,22 @@
+first_name	last_name	id	age	mayor selection	List Selection	arrival time
+Gabriela	Mewton	571005324	19	Maya Lavie	Roots	28
+Standford	Imison	893276370	30	Noam Gaon	Roots	28
+Latia	Tripean	658890971	43	Roie Zivan	The Employees	24
+Thadeus	Filipic	650353457	69	Maya Lavie	Roots	1
+Clary	Banstead	270235364	50	Maya Lavie	The Future	9
+Layla	Dahlen	942645434	50	Noam Gaon	The Employees	15
+Byran	Everson	601882848	45	Noam Gaon	The Employees	15
+Kay	Strattan	716969973	43	Roie Zivan	Together	24
+Peyter	Gosnoll	266096841	55	Maya Lavie	Difference	15
+Rosie	Ludman	708804285	33	Roie Zivan	Roots	14
+Alyss	Krammer	792157586	74	Eden Furman	The Employees	24
+Nicolai	Blonfield	815289866	35	Noam Gaon	The Future	9
+Stuart	Hamner	588898771	39	Noam Gaon	Difference	8
+Gal	Mattiello	524048924	47	Eden Furman	The Employees	28
+Kennith	Caird	871020542	45	Ben Rachmut	Difference	15
+Livvy	Robatham	125870625	33	Eden Furman	Together	29
+Salome	Carriage	870727183	64	Noam Gaon	Together	18
+Niall	Furniss	366158185	27	Eden Furman	Difference	2
+Heath	Geerits	355155658	47	Eden Furman	The Employees	15
+Shalne	Godin	610199837	58	Noam Gaon	The Employees	28
+Jasen	Toffetto	384162388	67	Roie Zivan	Together	8

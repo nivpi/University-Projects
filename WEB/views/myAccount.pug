@@ -1,0 +1,47 @@
+// myAccount.pug
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Farm2Door | Login
+        link(rel="stylesheet", href="style.css")
+    body(style="background-color: #f2f2f2")
+        header
+            .container
+                #branding
+                    h1 Farm2Door
+                nav
+                    .left-items
+                        ul
+                            li.current
+                                a(href="index") Home
+                    .right-items
+                        ul
+                            //- Add more right links here
+        .form-container(style="margin: 20px auto auto auto; max-width: 70%")
+            h2#form-header My Account
+            .form-container(style="margin: 20px auto auto auto; max-width: 55%")
+                h2 My Orders
+                .list(style="display:block")
+                    each order in orders
+                        .orderlist(id="" + order.orderId)
+                            .title.order
+                                b ID:
+                                span  #{order.orderId}
+                            .title.order
+                                b Date:
+                                span  #{order.datetime}
+                            .title.order
+                                b Total Price:
+                                span  $#{order.totalPrice}
+            .form-container(style="margin: 20px auto auto auto; max-width: 55%")
+                h2 Update Password
+                form#updatePasswordForm.content(onsubmit="/myAccount", method="post")
+                    input#username.input_field.accountTextBox(type="text", name="username", placeholder="Username", required, minlength="3", maxlength="20", form="updatePasswordForm")
+                    input#oldPassword.input_field.accountTextBox(type="password", name="oldPassword", placeholder="Old Password", required, minlength="6", maxlength="20", form="updatePasswordForm")
+                    input#newPassword.input_field.accountTextBox(type="password", name="newPassword", placeholder="New Password", required, minlength="6", maxlength="20", form="updatePasswordForm")
+                button#passwordChangeBtn(type="submit", form="updatePasswordForm") Update Password
+
+        script(src="js/myAccount.js")
+        script(src="js/user.js")

@@ -1,0 +1,408 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: darkseagreen;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: darkorange;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: darkslategrey 3px solid;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header #branding {
+    float:left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header li {
+    display: inline;
+    padding: 20px;
+}
+
+header nav {
+    margin-top: 13px;
+}
+
+header nav .left-items {
+    float: left;
+}
+
+header nav .right-items {
+    float: right;
+}
+
+header .current a {
+    color: lawngreen;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: palegreen;
+    font-weight: bold;
+}
+
+#showcase {
+    min-height: 400px;
+    background: url('images/showcase4.jpg') no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    filter: grayscale(0%);
+    color: whitesmoke;
+}
+
+#showcase h1 {
+    margin-top: 130px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#newsletter {
+    padding: 10px;
+    color: white;
+    background: green;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    margin-top: 15px;
+    float: right;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 220px;
+}
+
+#sellers {
+    padding: 40px;
+    text-align: center;
+}
+
+#sellers h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.seller {
+    max-width: 300px;
+    text-align: center;
+}
+
+.seller img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.seller h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.seller .shipping {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.seller .button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.seller .button:hover {
+    background-color: #555;
+}
+
+
+/* Login/Register Page */
+
+.form-container {
+    max-width: 400px;
+    margin: 15% auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.register-link, .login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Shop Page */
+
+
+.shop-container {
+    width: 1000px;
+    transition: 0.5s;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin: 50px auto auto;
+}
+
+.shop-container .shopping {
+    position: relative;
+    text-align: right;
+}
+
+.shop-container .shopping span {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+
+.list .item {
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+
+.list .item img {
+    width: 90%;
+}
+
+.list .item .title {
+    font-weight: 600;
+}
+
+.list .item .price {
+    margin: 10px;
+}
+
+.list .item button {
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.list .item button:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.card {
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+/* Style for the list container */
+.orderlist {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for each order */
+.orderlist > div {
+    padding: 5px;
+}
+
+.order {
+    /*background-color: lightgreen;*/
+    /*font-weight: bold;*/
+}
+
+#passwordChangeBtn {
+    display: flex;
+    margin: auto;
+    max-width: 500px;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.accountTextBox {
+    display: flex;
+    margin: 0 auto 20px auto;
+    max-width: 470px;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.card h1 {
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: #fff;
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+.listCard li button {
+    background-color: #fff5;
+    border: none;
+}
+
+.listCard .count {
+    margin: 0 10px;
+}
+
+#logout-button {
+    color: #fff !important;
+    background: none !important;
+    border: none !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+}
+
+#logout-button:hover {
+    color: lightgreen !important;
+    font-weight: bold !important;
+}

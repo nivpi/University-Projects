@@ -1,0 +1,41 @@
+// shop.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="style.css")
+    body(class="" style="background-color: #E3E7E8")
+        header
+            .container
+                #branding
+                    h1 Farm2Door
+                nav
+                    .left-items
+                        ul
+                            li.current
+                                a(href="index") Home
+        .shop-container
+            h1 #{supplier.name}
+            .shopping
+                img(src="images/shopping.svg", width="40px")
+                span.quantity 0
+            .list
+                 each product in productsResponse
+                     .item(id=""+product.productId)
+                         img.image(src="images/"+product.image)
+                         .title #{product.name}
+                         .title #{product.price} per kg
+                         button.button1(onclick="addToCart("+product.productId+")") Add To Cart
+
+        .card
+            h1 Cart
+            ul.listCard
+            .checkOut
+                .total 0
+                .closeShopping Close
+
+        script(src="js/shop.js")
+        script(src="js/user.js")

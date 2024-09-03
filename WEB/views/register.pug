@@ -1,0 +1,33 @@
+// register.pug
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Register Page
+        link(rel="stylesheet", href="style.css")
+    body(style="background-color: #f2f2f2")
+        header
+            .container
+                #branding
+                    h1 Farm2Door
+                nav
+                    .left-items
+                        ul
+                            li.current
+                                a(href="index") Home
+                    .right-items
+                        ul
+                            li
+                                a(href="login") Login
+        .form-container
+            h2 Register
+            form#form(action="/register", method="post")
+                input#username(type="text", name="username", placeholder="Username", required, minlength="3", maxlength="20", form="form")
+                input#name(type="text", name="name", placeholder="Full Name", required, minlength="3", maxlength="30", form="form")
+                input#password(type="password", name="password", placeholder="Password", required, minlength="6", maxlength="20", form="form")
+                input#passwordConfirm(type="password", name="passwordConfirm", placeholder="Confirm Password", form="form")
+                button(type="submit", form="form") Register
+            .login-link
+                | Already have an account?
+                a(href="login") Login

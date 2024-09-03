@@ -1,0 +1,11 @@
+productId,supplier,name,image,price
+1,2,Broccoli,broccoli.png,1.05
+2,2,Banana,banana.png,1.60
+3,2,Blueberry,blueberry.png,5.60
+4,2,Pumpkin,pumpkin.png,1.06
+5,2,Tomato,tomato.png,3.28
+6,2,Orange,orange.png,0.35
+7,2,Strawberry,strawberry.png,11.38
+8,2,Watermelon,watermelon.png,0.55
+9,3,Broccoli,broccoli.png,1.05
+10,3,Orange,orange.png,0.35

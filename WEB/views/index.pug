@@ -1,0 +1,62 @@
+// index.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Farm2Door | Home Page
+        link(rel="stylesheet", href="style.css")
+    body
+        header
+            .container
+                #branding
+                    h1 Farm2Door
+                nav
+                    .left-items
+                        ul
+                            li.current
+                                a(href="/index") Home
+                    .right-items
+                        ul
+                            // Add more right links here
+        section#showcase
+            .container
+                h1 Deliciously fresh, straight from the farm
+                p Discover a farm-fresh revolution right at your doorstep, where delicious, locally-sourced fruits and vegetables are just a click away!
+        section#newsletter
+            .container
+                h1 Stay informed of sales and promos!
+                form
+                    input(type="email", placeholder="Enter Email...", pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+                    button.button_1(type="submit") Subscribe
+        section#sellers
+            h2 Our Partner Farms
+            .gallery
+                .seller
+                    img(src="images/spice_seller.jpg", alt="Farm 1")
+                    h3 Aroma Trail
+                    p.shipping Shipping Fee: $5
+                    p(style="color: red") Opening Soon..
+                    //a(href="/shop?supplier=1", class="button") Shop Now
+                .seller
+                    img(src="images/generic1_seller.jpg", alt="Farm 2")
+                    h3 Freshland
+                    p.shipping Shipping Fee: $6
+                    a(href="/shop?supplier=2", class="button") Shop Now
+                .seller
+                    img(src="images/orchard_seller.jpg", alt="Farm 3")
+                    h3 Orchard View
+                    p.shipping Shipping Fee: $4
+                    //p(style="color: red") Opening Soon..
+                    a(href="/shop?supplier=3", class="button") Shop Now
+                .seller
+                    img(src="images/greens_seller.webp", alt="Farm 4")
+                    h3 Green Valley
+                    p.shipping Shipping Fee: $4
+                    p(style="color: red") Opening Soon..
+                    //a(href="/shop?supplier=4", class="button") Shop Now
+        footer
+            p
+
+        script(src="js/navbar.js")
+        script(src="js/user.js")

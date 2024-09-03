@@ -1,0 +1,32 @@
+// login.pug
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Farm2Door | Login
+        link(rel="stylesheet", href="style.css")
+    body(style="background-color: #f2f2f2")
+        header
+            .container
+                #branding
+                    h1 Farm2Door
+                nav
+                    .left-items
+                        ul
+                            li.current
+                                a(href="index") Home
+                    .right-items
+                        ul
+                            //- Add more right links here
+        .form-container
+            h2 Login
+            form#form.content(onsubmit="/login", method="post")
+                input#username.input_field(type="text", name="username", placeholder="Username", required, minlength="3", maxlength="20", form="form")
+                input#password.input_field(type="password", name="password", placeholder="Password", required, minlength="6", maxlength="20", form="form")
+            .register-link
+                | Don't have an account?
+                a(href="register") Register
+
+        script(src="js/login.js")
+        script(src="/js/user.js")

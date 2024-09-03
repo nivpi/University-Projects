@@ -1,5 +1,5 @@
-# group12 - Web Project
-Niv Pinto &amp; Elad Argaman
+# Web Project
+HTML, CSS, Javascript, Express.js, Pug
 
 ## About
 This project simulates a website which aims to provide customers with fresh fruits and vegetables quickly, without the need to leave their homes.
